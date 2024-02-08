@@ -1,0 +1,40 @@
+
+.example-card {
+  max-width: 250px;
+}
+.example-card {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.mat-card-subtitle {
+  font-size: 18px;
+}
+
+
+.example-header-image-1x {
+  background-image: url('src/assets/img/code-1x.png');
+  background-size: cover;
+}
+.example-header-image-2x {
+  background-image: url('src/assets/img/code-2x.png');
+  background-size: cover;
+}
+
+.example-header-image-3x {
+  background-image: url('src/assets/img/code-3x.png');
+  background-size: cover;
+}
+
+.mat-grid-tile {
+  background: lightblue;
+}
+
+.lists_class {
+  width: 100%;
+}
+.link_class {
+  display: inline;
+  float: left;
+  width: min-content;
+}
