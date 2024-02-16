@@ -19,6 +19,6 @@ export class MenuComponent implements OnInit {
   offer!: String;
 
   ngOnInit(): void {
-    this.offer = "Quality in our work and great price";
+    this.offer = "Lucimar Cimoncelos, Brodgeport CT - 06610, desingyfinished@gmail.com";
     }
 }

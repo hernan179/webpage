@@ -1,3 +1,11 @@
+.mat-tab-nav-bar {
+  white-space: nowrap;
+  overflow: auto;
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
 .example-container {
   display: flex;
   flex-direction: column;
@@ -7,7 +15,7 @@
   left: 0;
   right: 0;
 }
-mat-sidenav{
+.mat-sidenav{
   width: 200px;
   background-color: #eeee;
 }
@@ -16,6 +24,19 @@ mat-sidenav{
   flex: 1;
 }
 
+.mat-sidenav-container {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.blank-grow {
+  flex: 1 1 auto;
+}
+
+
 .example-spacer {
   flex: 1 1 auto;
 }
+.mat-toolbar-row {
+  background-color: cadetblue;
+}
+

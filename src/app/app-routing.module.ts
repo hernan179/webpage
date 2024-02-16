@@ -4,8 +4,8 @@ import { MenuComponent } from './pages/menu/menu.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo:'pages/menu',pathMatch: 'full'},
-  {path: 'pages/menu',component: MenuComponent}
+  { path: '', redirectTo:'home', pathMatch: 'full'},
+  { path: 'home',component: MenuComponent}
 ];
 
 @NgModule({

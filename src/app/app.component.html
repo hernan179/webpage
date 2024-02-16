@@ -1,16 +1,11 @@
-<div class="mat-sidenav-container">
 
 
-  <mat-toolbar color="primary" class="example-toolbar">
+  <mat-toolbar color="primary" class="mat-tab-nav-bar">
     <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon *ngIf="!sidenav.opened">menu_open</mat-icon>
         <mat-icon *ngIf="sidenav.opened">close</mat-icon>
     </button>
-
-    <h1 class="example-app-name">   {{owner}}</h1>
-
-
-
+    <h1>   {{owner}}</h1>
     <span class="example-spacer"></span>
 
     <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -29,23 +24,35 @@
   </mat-toolbar>
 
 
+
+<mat-toolbar color="primary" class="mat-tab-nav-bar">
+  <mat-toolbar-row class="bg-color-whatever">
+    <a><mat-icon>accessibility</mat-icon>Validation</a>
+    <mat-icon></mat-icon>
+    <a><mat-icon>build</mat-icon>Materials</a>
+    <mat-icon></mat-icon>
+    <a><mat-icon>dashboard</mat-icon>Others</a>
+    <mat-icon></mat-icon>
+    <a><mat-icon>pan_tool</mat-icon>Contact us</a>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
   <mat-sidenav-container>
-
-
     <mat-sidenav #sidenav style="width: 200px" mode="over">
-      <img src="assets/img/myicon.png" width="128" style="margin-left: 20px">
 
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/search" style="cursor: pointer">
-          <mat-icon>search</mat-icon>
-          <span>Search</span>
-      </button>
-      <mat-divider></mat-divider>
+      <img src="assets/img/myicon.png" width="165" style="margin-left: 18px; margin-top: 10px;">
       <mat-divider></mat-divider>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/menu" style="cursor: pointer">
-          <mat-icon>account_balance</mat-icon>
-          <span>Menu..</span>
+          <mat-icon>call</mat-icon>
+          <span>123456789</span>
       </button>
       <mat-divider></mat-divider>
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/patient" style="cursor: pointer">
+        <mat-icon>contacts</mat-icon>
+        <span>Catalogue</span>
+    </button>
+    <mat-divider></mat-divider>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/client"
           style="cursor: pointer">
           <mat-icon>supervisor_account</mat-icon>
@@ -53,40 +60,30 @@
       </button>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/credit" style="cursor: pointer">
           <mat-icon>credit_card</mat-icon>
-          <span>Credits</span>
+          <span>Contract</span>
       </button>
       <mat-divider></mat-divider>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/consult-autocomplete"
           style="cursor: pointer">
           <mat-icon>thumbs_up_down</mat-icon>
-          <span>Simulador</span>
-      </button>
-          <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/medic" style="cursor: pointer">
-          <mat-icon>reorder</mat-icon>
-          <span>Certificados</span>
+          <span>Referens</span>
       </button>
       <mat-divider></mat-divider>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/specialty" style="cursor: pointer">
-          <mat-icon>trending_up</mat-icon>
-          <span>Actividad</span>
+          <mat-icon>building</mat-icon>
+          <span>Experience</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/patient" style="cursor: pointer">
-          <mat-icon>contacts</mat-icon>
-          <span>Contactenos</span>
-      </button>
 
-      <mat-divider></mat-divider>
       <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/exam" style="cursor: pointer">
-          <mat-icon>call</mat-icon>
-          <span>Ayuda</span>
+          <mat-icon>comments</mat-icon>
+          <span>Contact us</span>
       </button>
-          <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
   </mat-sidenav>
 
     <mat-sidenav-content>
     <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-</div>
+

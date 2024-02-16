@@ -13,6 +13,6 @@ opened: BooleanInput;
 owner!: String;
 
 ngOnInit(): void {
-this.owner = "Lucimar Cimoncelos, Brodgeport CT - 06610, desingyfinished@gmail.com";
+this.owner = "Builder Decorate";
   }
 }
