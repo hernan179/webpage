@@ -1,1 +1,60 @@
-<p>clients works!</p>
+<p>Take a look for some clients who were trust in out job</p>
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Decorate living room
+      </mat-panel-title>
+      <mat-panel-description>
+        More details
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image-1x"></div>
+        <mat-card-title>Brigeport</mat-card-title>
+        <mat-card-subtitle>06610</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/img/living-room.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Attached simple resume about the job.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Double instalation on super board
+      </mat-panel-title>
+      <mat-panel-description>
+        View more
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image-1x"></div>
+        <mat-card-title>Brigeport</mat-card-title>
+        <mat-card-subtitle>06610</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/img/living-roomw2.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Attached simple resume about the job.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-expansion-panel>
+</mat-accordion>
+

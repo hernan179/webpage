@@ -12,8 +12,6 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ClientsComponent } from './clients/clients.component';
-import { ExperienceComponent } from './experience/experience.component';
 import { ContractComponent } from './contract/contract.component';
 
 
@@ -21,8 +19,6 @@ import { ContractComponent } from './contract/contract.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ClientsComponent,
-    ExperienceComponent,
     ContractComponent
 
   ],
