@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { MatCardModule} from '@angular/material/card';
-import {MatListModule} from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-menu',
@@ -10,8 +10,8 @@ import {MatListModule} from '@angular/material/list';
   standalone:true,
   imports: [
     MatGridListModule,
-    MatCardModule,
-    MatListModule
+ MatCardModule,
+ MatListModule
   ]
 
 })

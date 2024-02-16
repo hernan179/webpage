@@ -12,14 +12,18 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatListModule} from '@angular/material/list';
-
+import { ClientsComponent } from './clients/clients.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContractComponent } from './contract/contract.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClientsComponent,
+    ExperienceComponent,
+    ContractComponent
 
   ],
   imports: [
@@ -31,7 +35,8 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatListModule
+
+
 
   ],
   providers: [],

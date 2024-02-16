@@ -1,5 +1,5 @@
 
-
+<div class="example-container">
   <mat-toolbar color="primary" class="mat-tab-nav-bar">
     <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon *ngIf="!sidenav.opened">menu_open</mat-icon>
@@ -38,7 +38,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-  <mat-sidenav-container>
+  <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #sidenav style="width: 200px" mode="over">
 
       <img src="assets/img/myicon.png" width="165" style="margin-left: 18px; margin-top: 10px;">
@@ -48,42 +48,43 @@
           <span>123456789</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/patient" style="cursor: pointer">
-        <mat-icon>contacts</mat-icon>
-        <span>Catalogue</span>
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/home" style="cursor: pointer">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
     </button>
     <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/client"
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/clients"
           style="cursor: pointer">
-          <mat-icon>supervisor_account</mat-icon>
+          <mat-icon>apps</mat-icon>
           <span>Clients</span>
       </button>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/credit" style="cursor: pointer">
-          <mat-icon>credit_card</mat-icon>
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/contract" style="cursor: pointer">
+          <mat-icon>watch_later</mat-icon>
           <span>Contract</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/consult-autocomplete"
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/referent"
           style="cursor: pointer">
-          <mat-icon>thumbs_up_down</mat-icon>
-          <span>Referens</span>
+          <mat-icon>done_all</mat-icon>
+          <span>References</span>
       </button>
       <mat-divider></mat-divider>
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/specialty" style="cursor: pointer">
-          <mat-icon>building</mat-icon>
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/experience" style="cursor: pointer">
+          <mat-icon>touch_app</mat-icon>
           <span>Experience</span>
       </button>
       <mat-divider></mat-divider>
 
-      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/pages/exam" style="cursor: pointer">
-          <mat-icon>comments</mat-icon>
+      <button mat-menu-item (click)="sidenav.toggle()" routerLink="/contact" style="cursor: pointer">
+          <mat-icon>device_hub</mat-icon>
           <span>Contact us</span>
       </button>
       <mat-divider></mat-divider>
   </mat-sidenav>
 
-    <mat-sidenav-content>
+  <mat-sidenav-content>
     <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 
+</div>
