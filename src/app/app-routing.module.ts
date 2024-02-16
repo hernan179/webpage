@@ -10,13 +10,15 @@ import { ContractComponent } from './contract/contract.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo:'home', pathMatch: 'full'},
   { path: 'home',component: MenuComponent},
   {path: 'clients', component: ClientsComponent },
   {path: 'contract', component: ContractComponent },
   {path: 'experience', component: ExperienceComponent },
   {path: 'referent', component: ReferentComponent },
-  {path: 'contact', component: ContactComponent }
+  {path: 'contact', component: ContactComponent },
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'webpage/**', component: MenuComponent},
+  {path: '**', component: MenuComponent}
 ];
 
 @NgModule({
