@@ -37,6 +37,15 @@
   flex: 1 1 auto;
 }
 .mat-toolbar-row {
-  background-color: cadetblue;
+
+}
+.mat-tab-nav-bar-bottom{
+  position: absolute !important;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 
+.fontawesomesvg {width: 2em;
+  height: 2em;
+  vertical-align: -.125em;
+}

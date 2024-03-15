@@ -15,10 +15,8 @@ import { MatListModule } from '@angular/material/list';
   ]
 
 })
-export class MenuComponent implements OnInit {
-  offer!: String;
+export class MenuComponent  {
 
-  ngOnInit(): void {
-    this.offer = "Lucimar Cimoncelos, Brodgeport CT - 06610, desingyfinished@gmail.com";
-    }
+
+
 }

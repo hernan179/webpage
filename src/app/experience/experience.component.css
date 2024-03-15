@@ -5,3 +5,53 @@
   max-width: 400px;
   height: auto;
 }
+
+
+.mat-card-subtitle {
+  font-size: 18px;
+}
+
+
+.example-header-image-1x {
+  background-image: url('src/assets/images/bg/bg1.jpg');
+  background-size: cover;
+}
+.example-header-image-2x {
+  background-image: url('src/assets/images/bg/bg2.jpg');
+  background-size: cover;
+}
+
+.example-header-image-3x {
+  background-image: url('src/assets/images/bg/bg3.jpg');
+  background-size: cover;
+}
+
+.example-header-image-4x {
+  background-image: url('src/assets/images/bg/bg4.jpg');
+  background-size: cover;
+}
+.example-header-image-5x {
+  background-image: url('src/assets/images/bg/bg5.jpg');
+  background-size: cover;
+}
+.example-header-image-6x {
+  background-image: url('src/assets/images/bg/bg6.jpg');
+  background-size: cover;
+}
+.example-header-image-7x {
+  background-image: url('src/assets/images/bg/bg7.jpg');
+  background-size: cover;
+}
+
+.mat-grid-tile {
+  background: lightblue;
+}
+
+.lists_class {
+  width: 100%;
+}
+.link_class {
+  display: inline;
+  float: left;
+  width: min-content;
+}

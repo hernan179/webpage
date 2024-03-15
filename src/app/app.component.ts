@@ -10,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent   implements OnInit{
   title = 'webpage';
 opened: BooleanInput;
-owner!: String;
+  offerNow!: String;
+  offer!: String;
 
-ngOnInit(): void {
-this.owner = "Builder Decorate";
+  ngOnInit(): void {
+  this.offerNow = "Lou Construction";
+  this.offer = " 2035459694";
   }
+
 }

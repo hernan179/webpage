@@ -1,1 +1,28 @@
-<p>contract works!</p>
+<p>Fill out below information... </p>
+<div class="example-container">
+  <div class="form-container">
+    <form>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label> E-mail
+        </mat-label>
+        <input matInput formControlName="email" required>
+        <mat-error>
+          <span>This field is mandatory.</span>
+          <span>This field is invalid.</span>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label> Password
+        </mat-label>
+        <input matInput formControlName="password" type="password">
+        <mat-error>
+          <span>This field is mandatory.</span>
+        </mat-error>
+      </mat-form-field>
+      <div class="example-button-row">
+      <button mat-flat-button color="primary">Login</button>
+    </div>
+    </form>
+  </div>
+</div>
+
