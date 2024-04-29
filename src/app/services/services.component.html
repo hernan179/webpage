@@ -1,29 +1,15 @@
-<p>Our services</p>
+<p>What we Do</p>
 
-<table mat-table  class="mat-elevation-z8" [dataSource] = "dataSource">
 
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
+<mat-accordion multi="true" *ngFor="let post of dataSource">
 
-  <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-  </ng-container>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header> {{ post.name }}</mat-expansion-panel-header>
+    <mat-panel-description>
+      {{ post.details }}
+    </mat-panel-description>
+  </mat-expansion-panel>
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-  </ng-container>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="details">
-    <th mat-header-cell *matHeaderCellDef> Details </th>
-    <td mat-cell *matCellDef="let element"> {{element.details}} </td>
-  </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
+</mat-accordion>

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatListModule } from '@angular/material/list';
+import { MatListModule } from '@angular/material/list'
+import {MatIconModule} from '@angular/material/icon'
+
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +11,7 @@ import { MatListModule } from '@angular/material/list';
   styleUrls: ['./contact.component.css'],
   standalone:true,
   imports: [
- MatCardModule, MatGridListModule,MatListModule
+ MatCardModule, MatGridListModule,MatListModule,MatIconModule
   ]
 })
 export class ContactComponent {

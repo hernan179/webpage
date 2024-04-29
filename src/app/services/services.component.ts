@@ -3,9 +3,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
-
+import {FormsModule} from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser'
 
 import {MatTableModule} from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 export interface PeriodicElement {
   name: string;
@@ -27,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./services.component.css'],
   standalone: true,
   imports:[
-    MatExpansionModule,MatCardModule,MatGridListModule,MatTableModule
+    MatExpansionModule,MatCardModule,MatGridListModule,MatTableModule,FormsModule,CommonModule
   ]
 })
 export class ServicesComponent  {

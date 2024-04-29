@@ -15,7 +15,7 @@ opened: BooleanInput;
 
   ngOnInit(): void {
   this.offerNow = "Lou Construction";
-  this.offer = " 2035459694";
+  this.offer = " +12035459694";
   }
 
 }
